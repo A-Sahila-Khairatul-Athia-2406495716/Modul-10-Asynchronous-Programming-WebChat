@@ -27,12 +27,23 @@ pub fn login() -> Html {
     };
 
     html! {
-       <div class="bg-gray-800 flex w-screen">
-            <div class="container mx-auto flex flex-col justify-center items-center">
-                <form class="m-4 flex">
-                    <input {oninput} class="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="Username" />
-                    <Link<Route> to={Route::Chat}> <button {onclick} disabled={username.len()<1} class="px-8 rounded-r-lg bg-violet-600	  text-white font-bold p-4 uppercase border-violet-600 border-t border-b border-r" >{"Go Chatting!"}</button></Link<Route>>
-                </form>
+        <div class="flex w-screen h-screen" style="background-color: #f5f5f5;">
+            <div class="container mx-auto flex flex-col justify-center items-center h-full gap-4">
+                <div style="border: 3px solid black; border-radius: 20px; padding: 40px 60px; background: white; box-shadow: 6px 6px 0px black;">
+                    <h1 style="font-size: 2.5rem; font-weight: 900; color: black; text-align: center; margin-bottom: 8px;">{"YewChat!"}</h1>
+                    <p style="color: #888; text-align: center; margin-bottom: 24px; font-size: 0.9rem;">{"Real-time chat experience"}</p>
+                    <form class="flex">
+                        <input {oninput}
+                            style="border: 3px solid black; border-radius: 12px 0 0 12px; padding: 12px 20px; font-size: 1rem; outline: none; background: #f5f5f5;"
+                            placeholder="Enter your username..." />
+                        <Link<Route> to={Route::Chat}>
+                            <button {onclick} disabled={username.len()<1}
+                                style="border: 3px solid black; border-left: none; border-radius: 0 12px 12px 0; padding: 12px 24px; font-weight: 900; font-size: 1rem; background: #FF6B35; color: white; cursor: pointer; text-transform: uppercase;">
+                                {"Join"}
+                            </button>
+                        </Link<Route>>
+                    </form>
+                </div>
             </div>
         </div>
     }
