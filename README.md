@@ -1,3 +1,9 @@
+## Server Options to Run YewChat
+
+1. **JavaScript**: https://github.com/jtordgeman/SimpleWebsocketServer
+2. **Rust**: https://github.com/A-Sahila-Khairatul-Athia-2406495716/Modul-10-Asynchronous-Programming-Broadcast-Chat
+
+
 ## Experiment 3.1: Original Code
 
 ![3.1 1](assets/images/3_1_1.png)
