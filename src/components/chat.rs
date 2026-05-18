@@ -155,9 +155,6 @@ impl Component for Chat {
                                         <div class="flex text-sm justify-between">
                                             <div>{u.name.clone()}</div>
                                         </div>
-                                        <div class="text-sm text-gray-400">
-                                            {"Hi there!"}
-                                        </div>
                                     </div>
                                 </div>
                             }
